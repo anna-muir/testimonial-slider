@@ -35,13 +35,13 @@ body {
 .testimonial {
 
     height: 20rem;
-    width: 30rem;
+    width: 34rem;
     display: flex;
     flex-direction: column;
     display: none;
     padding: 1rem;
     border-radius: .5rem;
-    border: 1px solid black;
+    background-color: #f6f6f6;
 
 }
 
@@ -52,15 +52,25 @@ body {
     align-items: center;
     height: 100%;
     font-weight: 300;
+    font-style: italic;
+    line-height: 1.8rem;
+    text-align: center
+}
+
+.testimonial-name {
+    font-style: normal;
+    font-weight: bold;
 }
 
 .button {
-    height: 3rem;
-    width: 3rem;
+    height:3rem;
+    width: 3.2rem;
     background: none;
-    font-size: 1.6rem;
-    border: 1px solid black;
-    border-radius: .5rem;
+    font-size: 2rem;
+    
+    box-shadow: 2px 2px 5px black;
+    border: none;
+    border-radius: 2rem;
     
     
 }
@@ -70,6 +80,10 @@ body {
     color: white;
     cursor: pointer;
     transition: .3s ease-in;
+}
+
+.button:disabled {
+    cursor: not-allowed;
 }
 
 #next {
@@ -87,7 +101,7 @@ body {
 .active {
    display: block;
    opacity: 1;
-   animation: fade .2s ease-in;
+   animation: fade .6s ease-in-out;
    
    
 }
